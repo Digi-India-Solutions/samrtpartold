@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /blogs?*
 Allow: /
-Sitemap: https://www.smartpartsexport.com/sitemap.xml
+Sitemap: https://www.wwseals.com/sitemap.xml
