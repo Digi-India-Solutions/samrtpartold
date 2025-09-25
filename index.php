@@ -3,8 +3,25 @@ ini_set('memory_limit', '-1');
 ini_set('post_max_size', '64G');
 ini_set('upload_max_filesize', '64G');
 ini_set('max_execution_time', '300000');
+
 // Path to the front controller (this file)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
+
+/*
+ *---------------------------------------------------------------
+ * LOAD ENV FILE (for API keys, secrets, etc.)
+ *---------------------------------------------------------------
+ */
+$envFile = __DIR__ . '/.env';
+if (file_exists($envFile)) {
+    $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0) continue; // skip comments
+        if (!strpos($line, '=')) continue; // skip invalid lines
+        list($name, $value) = explode('=', $line, 2);
+        putenv(trim($name) . '=' . trim($value));
+    }
+}
 
 /*
  *---------------------------------------------------------------
