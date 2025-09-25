@@ -1,0 +1,67 @@
+# Disable directory browsing
+Options All -Indexes
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#php_value upload_max_filesize 3000M
+<IfModule mod_php5.c>
+php_value post_max_size 5000G
+php_value upload_max_filesize 5000G
+php_value memory_limit 1280G
+php_value max_execution_time 3000000000
+php_value max_input_time 30000000
+php_value session.gc_maxlifetime 120000000
+</IfModule>
+<IfModule !mod_rewrite.c>
+# If we don't have mod_rewrite installed, all 404's
+# can be sent to index.php, and everything works as normal.
+ErrorDocument 404 index.php
+</IfModule>
+# Disable server signature start
+ServerSignature Off
+# Disable server signature end
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+AddHandler application/x-httpd-ea-php73___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >>Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+php_value post_max_size 6400M
+php_value upload_max_filesize 2G
+php_value memory_limit 1280M
+php_value max_execution_time 12000
+php_value max_input_time 30000000
+php_value max_input_vars 200000
+php_flag display_errors Off
+php_value session.gc_maxlifetime 1440
+php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+php_value post_max_size 6400M
+php_value upload_max_filesize 2G
+php_value memory_limit 1280M
+php_value max_execution_time 12000
+php_value max_input_time 30000000
+php_value max_input_vars 200000
+php_flag display_errors Off
+php_value session.gc_maxlifetime 1440
+php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

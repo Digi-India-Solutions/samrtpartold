@@ -1,0 +1,62 @@
+<?php
+use App\Models\CommonModel;
+
+$this->AdminModel = new CommonModel();
+
+$setting = $this->AdminModel->all_fetch('setting', array('code' => 'config'));
+foreach ($setting as $key => $value) {
+    $wconfig[$value->key] = $value->value;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title><?php if (!empty($meta_title)) { echo $meta_title; } ?></title>
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url($wconfig['config_favicon']); ?>">
+    <base href="<?php echo base_url(); ?>/" id="base" data-base="<?php echo base_url(); ?>/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Мы предлагаем лучшие запчасти для вашего автомобиля.">
+    <meta name="keywords" content="автозапчасти, качество, доставка">
+    <meta name="author" content="<?php echo $wconfig['config_name']; ?>">
+    <link rel="canonical" href="<?php echo current_url(); ?>"/>
+
+    <link rel="alternate" hreflang="x-default" href="https://www.ssdipl.com/" />
+    <link rel="alternate" hreflang="ru" href="https://www.ssdipl.com
+    <link rel="alternate" hreflang="ar" href="https://www.ssdipl.com
+    
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
+</head>
+
+<body>
+    <?php echo $this->include('frontend/includes/header'); ?>
+
+    <main>
+        <h1>Добро пожаловать на Smart Parts Exports</h1>
+        <p>Мы предлагаем лучшие запчасти для вашего автомобиля.</p>
+
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Двигатели</li>
+            <li>Трансмиссии</li>
+            <li>Тормоза</li>
+        </ul>
+
+        <h2>Почему выбирают нас?</h2>
+        <ul>
+            <li>Гарантия качества</li>
+            <li>Быстрая доставка</li>
+            <li>Поддержка клиентов</li>
+        </ul>
+
+        <h2>Свяжитесь с нами</h2>
+        <p>Если у вас есть вопросы, не стесняйтесь обращаться к нам по электронной почте или телефону.</p>
+    </main>
+
+    <?php echo $this->include('frontend/includes/footer'); ?>
+
+    <script src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
+</body>
+</html>

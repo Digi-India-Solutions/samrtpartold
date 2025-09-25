@@ -1,0 +1,24 @@
+[11-Aug-2024 10:12:14 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69
+[06-Nov-2024 22:57:05 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69
+[15-Nov-2024 02:27:58 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69
+[21-Dec-2024 12:40:57 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69
+[10-Jan-2025 04:51:12 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69
+[19-Feb-2025 20:50:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/plugins/hello.php on line 69

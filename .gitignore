@@ -1,0 +1,59 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.log.*
+*.tmp
+*.tmp.*
+*.bak
+*.bak.*
+*.swp
+*.swp.*
+*.old
+*.old.*
+*.cache
+*.cache.*
+
+# Node.js (build tools)
+node_modules/
+dist/
+package-lock.json
+yarn.lock
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# WordPress core (never commit)
+wp-admin/
+wp-includes/
+
+# WordPress uploads (user-generated, don’t version control)
+wp-content/uploads/
+
+# WordPress cache / backups
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/ai1wm-backups/
+
+# Ignore all plugins except custom ones
+wp-content/plugins/*
+!wp-content/plugins/my-custom-plugin/
+!wp-content/plugins/another-custom-plugin/
+
+# Ignore all themes except custom one
+wp-content/themes/*
+!wp-content/themes/my-custom-theme/
+
+# Environment & sensitive files
+.env
+.env.*
+*.sql
+*.sql.gz
+*.tar.gz
+
+#  Images foldewr
+uploads

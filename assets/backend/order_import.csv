@@ -1,0 +1,2 @@
+Transaction no,Order Status(INT),Cutomer ID (INT),First Name,Last Name,Email ,Phone,Address Line 1,Address Line 2,City,Pincode,Country ID(int),Total Amount of order,Discount,Shippint Charge,Coupon ID,TaX Amount,Payment Method (CoD/Payumoney),"Order date (2022-01-08,'yyyy-mm-dd')","ORDER MULTIPLE PRODUCTS  (product_id,qty,price @)"
+368f07cf989b5c6b44d5,1,127,JOHN ,DEO,john@gmail.com,8888888888,Karol Bagh,GT ROAD,NEW DELHI,110045,99,477.58,53,0,14,0,cod,19-01-2022,"191696,1,26.33 @ 556302,5,100.85"

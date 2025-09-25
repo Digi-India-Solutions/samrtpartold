@@ -1,0 +1,28 @@
+[29-Sep-2024 03:52:17 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[30-Sep-2024 20:42:02 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[03-Oct-2024 08:06:49 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[04-Oct-2024 06:24:39 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[05-Oct-2024 17:28:37 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[10-Oct-2024 07:54:13 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59
+[03-Nov-2024 22:48:58 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home2/ifquyzmy/public_html/smartpartsexports/wp-content/mu-plugins/sso.php on line 59

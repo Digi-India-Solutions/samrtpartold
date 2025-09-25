@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /blogs?*
+Allow: /
+Sitemap: https://www.ssdipl.com/sitemap.xml
