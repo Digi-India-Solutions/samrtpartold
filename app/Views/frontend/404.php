@@ -13,7 +13,7 @@ $this->section('page');
             <p class="lead">
                 The page you’re looking for doesn’t exist.
             </p>
-            <a href="https://www.smartpartsexport.com/" class="btn btn-primary">Go Home</a>
+            <a href="https://www.wwseals.com/" class="btn btn-primary">Go Home</a>
         </div>
 
     </div>

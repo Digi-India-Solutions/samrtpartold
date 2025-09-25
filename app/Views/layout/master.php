@@ -27,12 +27,12 @@ $wconfig[$value->key] = $value->value;
 <meta name="author" content="<?php echo $wconfig['config_name'];?>">
 <meta name="p:domain_verify" content="ff55db63285c2aceeef95ba6aa900fbb"/>
 <link rel="canonical" href="<?php echo current_url(); ?>"/>
-<link rel="alternate" hreflang="x-default" href="https://www.smartpartsexport.com/" />
-<link rel="alternate" hreflang="ru" href="https://www.smartpartsexport.com
-<link rel="alternate" hreflang="ru-RU" href="https://www.smartpartsexport.com
-<link rel="alternate" hreflang="ar" href="https://www.smartpartsexport.com
-<link rel="alternate" hreflang="ar-AE" href="https://www.smartpartsexport.com
-<link rel="alternate" hreflang="ar-SA" href="https://www.smartpartsexport.com
+<link rel="alternate" hreflang="x-default" href="https://www.wwseals.com/" />
+<link rel="alternate" hreflang="ru" href="https://www.wwseals.com
+<link rel="alternate" hreflang="ru-RU" href="https://www.wwseals.com
+<link rel="alternate" hreflang="ar" href="https://www.wwseals.com
+<link rel="alternate" hreflang="ar-AE" href="https://www.wwseals.com
+<link rel="alternate" hreflang="ar-SA" href="https://www.wwseals.com
 
 
 <?php 
@@ -107,8 +107,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Smart Parts Exports",
-  "url": "https://www.smartpartsexport.com
-  "logo": "https://www.smartpartsexport.com1400_eb8a50ada7319ff4f926.png",
+  "url": "https://www.wwseals.com
+  "logo": "https://www.wwseals.com1400_eb8a50ada7319ff4f926.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-882-647-7077",
@@ -128,10 +128,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Smart Parts Exports",
-  "url": "https://www.smartpartsexport.com
+  "url": "https://www.wwseals.com
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://www.smartpartsexport.comg}",
+    "target": "https://www.wwseals.comg}",
     "query-input": "required name=search_term_string"
   }
 }
