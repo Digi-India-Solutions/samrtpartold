@@ -3,6 +3,7 @@ ini_set('memory_limit', '-1');
 ini_set('post_max_size', '64G');
 ini_set('upload_max_filesize', '64G');
 ini_set('max_execution_time', '300000');
+
 // Path to the front controller (this file)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
@@ -19,22 +20,20 @@ define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 chdir(__DIR__);
 
 // Load our paths config file
-// This is the line that might need to be changed, depending on your folder structure.
 $pathsConfig = FCPATH . 'app/Config/Paths.php';
-// ^^^ Change this if you move your application folder
 require realpath($pathsConfig) ?: $pathsConfig;
 
 $paths = new Config\Paths();
 
-// Location of the framework bootstrap file.
-$bootstrap = rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
-$app       = require realpath($bootstrap) ?: $bootstrap;
+// Load Composer autoload (must exist after `composer install`)
+require FCPATH . 'vendor/autoload.php';
+
+// Bootstrap the CodeIgniter framework
+$app = require rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
  *---------------------------------------------------------------
- * Now that everything is setup, it's time to actually fire
- * up the engines and make this app do its thang.
  */
 $app->run();
